@@ -1,0 +1,4 @@
+﻿  test_5_22.c
+C:\c\c2\Project51\test_5_22.c(70,14): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\c\c2\Project51\test_5_22.c(71,14): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  Project51.vcxproj -> C:\c\c2\Project51\x64\Debug\Project51.exe
