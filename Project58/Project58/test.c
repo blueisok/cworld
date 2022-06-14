@@ -17,7 +17,7 @@ void menu()
 	printf("******电话通讯录管理系统********\n");
 	printf("**1.添加通讯录    2.删除通讯录**\n");
 	printf("***3.查找通讯录   4.修改通讯录***\n");
-	printf("***5.展示成员     6.通讯录排序***\n");
+	printf("***5.展示成员     6.排序通讯录***\n");
 	printf("***7.保存通讯录   0.退出通讯录***\n");
 	printf("********************************\n");
 }
@@ -67,7 +67,6 @@ void mainfun() //主要的功能函数
 }
 int main()
 {
-	
 	initcontact(&con);//初始化通讯录
 	mainmenu();
 	printf("请选择->");
@@ -77,6 +76,7 @@ int main()
 	case 1: mainfun();//进入登入系统，然后进入通讯录
 	       break;
 	case 2: modifycode(&id);//修改账号
+		   mainfun();
 		   break;
 	case 3: addid(&id);//添加账号
 		   mainfun();

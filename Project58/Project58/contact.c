@@ -53,6 +53,12 @@ int chcode(struct code*ps)
 
 void modifycode(struct code*ps)
 {
+	FILE* pt = fopen("C:\\c\\c2\\contact.code", "wb");
+	if (pt == NULL)
+	{
+		printf("%s", strerror(errno));
+		return;
+	}
 	int i=0;
 	char ch;
 	printf("请重新输入账号\n");
@@ -72,6 +78,10 @@ void modifycode(struct code*ps)
 		}
 	}
 	ps->arr2[i] = '\0';
+	fprintf(pt, "%s %s", ps->ter, ps->arr2);
+	fclose(pt);
+	pt = NULL;
+	printf("\n修改ID账号成功\n");
 }
 void addid(struct code* ps)
 {

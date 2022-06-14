@@ -1,2 +1,4 @@
-﻿  test.c
+﻿  contact.c
+C:\c\c2\Project58\Project58\contact.c(9,3): warning C4033: “chcode”必须返回值
+C:\c\c2\Project58\Project58\contact.c(52): warning C4715: “chcode”: 不是所有的控件路径都返回值
   Project58.vcxproj -> C:\c\c2\Project58\x64\Debug\Project58.exe
